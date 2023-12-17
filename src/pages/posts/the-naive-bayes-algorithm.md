@@ -3,19 +3,21 @@ layout: '@/templates/BasePost.astro'
 title: 'The Naive Bayes Algorithm: Introduction to Probabilistic Machine Learning'
 description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur vero esse non molestias eos excepturi.
 pubDate: 2020-02-06T00:00:00Z
-imgSrc: '/assets/images/image-post.jpeg'
+imgSrc: '/assets/images/naive-bayes.png'
 imgAlt: 'Image post'
 ---
 
+
 # The Naive Bayes Algorithm: Introduction to Probabilistic Machine Learning
 
-Machine learning algorithms are an integral part of today's technology-driven world. They are used in a wide range of applications, including natural language processing, image recognition, and autonomous systems. One such algorithm is the Naive Bayes algorithm, a popular probabilistic machine learning technique mainly used for classification tasks.
+Machine learning algorithms are an integral part of today's technology-driven world. They are used in a wide range of applications, including natural language processing, image recognition, and autonomous systems. One such algorithm is the Naive Bayes algorithm, a popular probabilistic machine learning technique used for classification tasks.
 
 In this blog post, we will introduce the Naive Bayes algorithm, explain how it works, and provide some examples of its applications. We will also discuss the mathematical principles behind the algorithm and how they relate to the geometry of changing beliefs.
 
 ## What is Naive Bayes Algorithm?
 
-The Naive Bayes algorithm is a machine learning technique based on Bayes' theorem, which is a fundamental concept in probability theory. Bayes' theorem describes the probability of an event occurring based on prior knowledge of related conditions. The theorem is based on conditional probability and is widely used in machine learning to make predictions based on evidence.
+The Naive Bayes algorithm is a machine learning technique based on Bayes theorem, which is a fundamental concept in probability theory. Bayes' theorem describes the probability of an event occurring based on prior knowledge of related conditions. The theorem is based on conditional probability and is widely used in machine learning to make predictions based on evidence.
+
 
 $$
 P(A|B) = \frac {P(B|A).P(A)}{P(B)}
@@ -70,7 +72,7 @@ When a new email arrives, we can use these probabilities to calculate the probab
 
 ## The Geometry Of Changing Beliefs
 
-Bayes' theorem is a fundamental concept in probability theory that allows us to update our beliefs based on new evidence. At the heart of Bayes' theorem is the notion that evidence should update beliefs, not determine them.
+Bayes theorem is a fundamental concept in probability theory that allows us to update our beliefs based on new evidence. At the heart of Bayes' theorem is the notion that evidence should update beliefs, not determine them.
 
 The theorem is based on two types of probabilities: prior probability and posterior probability. The prior probability is our initial belief or probability before we receive any new evidence. In contrast, the posterior probability is the updated belief or probability after we have taken the new evidence into account.
 
