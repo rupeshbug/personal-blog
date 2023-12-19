@@ -1,9 +1,9 @@
 ---
 layout: '@/templates/BasePost.astro'
 title: 'The Naive Bayes Algorithm: Introduction to Probabilistic Machine Learning'
-description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur vero esse non molestias eos excepturi.
+description: Dive into the Naive Bayes algorithm—a gateway to probabilistic machine learning. Uncover its principles, applications, and mathematical core in a concise exploration.
 pubDate: 2020-02-06T00:00:00Z
-imgSrc: '/assets/images/naive-bayes.png'
+imgSrc: '/assets/images/naivebayes.png'
 imgAlt: 'Image post'
 ---
 
@@ -37,11 +37,11 @@ The Naive Bayes algorithm is a type of supervised learning primarily used for cl
 
 The above formula is easily comprehensible for solving high school problems, but let's see how we can apply it to our dataset. Suppose we have a dataset with features $x_1, x_2, x_3$ , …….. and target y.
 
+This can be expressed as:
+
 $$
 P(y|x_1, x_2,....,x_n) = \frac {P(x_1|y).P(x_2|y).....P(x_n|y).P(y)}{P(x_1).P(x_2).....P(x_n)}
 $$
-
-This can be expressed as:
 
 $$ P(y|x_1,x_2,...,x_n) = \frac {P(y) \prod_{i=1}^{i=n} P(x_i|y)}{P(x_1).P(x_2)....P(x_n)}
 

@@ -10,20 +10,19 @@ const Hero = () => (
     <HeroAvatar
       title={
         <>
-          Hi there, I'm <GradientText>Ixartz</GradientText> 👋
+          Hi there, I'm <GradientText>Rupesh</GradientText> 👋
         </>
       }
       description={
         <>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus{' '}
-          <a className="text-cyan-400 hover:underline" href="/">
-            malesuada
-          </a>{' '}
-          nisi tellus, non imperdiet nisi tempor at. Lorem ipsum dolor sit amet,{' '}
-          <a className="text-cyan-400 hover:underline" href="/">
-            consectetur
-          </a>{' '}
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+          <p>
+            I stay curious & learn new things related to data science and
+            machine learning. The transformative process of turning data into
+            stories and unraveling the hidden patterns and insights that lies
+            within it captivates me towards the infinite possibilies that data
+            holds. Join me in this journey, and together, we'll unravel the
+            tales hidden within the vast landscapes of data.
+          </p>
         </>
       }
       avatar={
@@ -52,12 +51,6 @@ const Hero = () => (
             <HeroSocial
               src="/assets/images/linkedin-icon.png"
               alt="Linkedin icon"
-            />
-          </a>
-          <a href="/">
-            <HeroSocial
-              src="/assets/images/youtube-icon.png"
-              alt="Youtube icon"
             />
           </a>
         </>

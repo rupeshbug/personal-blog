@@ -1,10 +1,8 @@
-import { FooterCopyright, Section } from 'astro-boilerplate-components';
-
-import { AppConfig } from '@/utils/AppConfig';
+import { Section } from 'astro-boilerplate-components';
 
 const Footer = () => (
   <Section>
-    <FooterCopyright site_name={AppConfig.site_name} />
+    <p className="text-center"> &copy; Copyright 2023 by DataChronicle </p>
   </Section>
 );
 
