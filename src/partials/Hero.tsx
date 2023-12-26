@@ -35,19 +35,13 @@ const Hero = () => (
       }
       socialButtons={
         <>
-          <a href="/">
+          <a href="https://github.com/rupeshbug?tab=repositories">
             <HeroSocial
-              src="/assets/images/twitter-icon.png"
-              alt="Twitter icon"
+              src="/assets/images/github-icon.png"
+              alt="Github icon"
             />
           </a>
-          <a href="/">
-            <HeroSocial
-              src="/assets/images/facebook-icon.png"
-              alt="Facebook icon"
-            />
-          </a>
-          <a href="/">
+          <a href="https://www.linkedin.com/in/rupesh-chaulagain-42b91a249/">
             <HeroSocial
               src="/assets/images/linkedin-icon.png"
               alt="Linkedin icon"
