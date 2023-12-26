@@ -1,7 +1,7 @@
 ---
 layout: '@/templates/BasePost.astro'
 title: 'The Naive Bayes Algorithm: Introduction to Probabilistic Machine Learning'
-description: Dive into the Naive Bayes algorithm—a gateway to probabilistic machine learning. Uncover its principles, applications, and mathematical core in a concise exploration.
+description: Dive into the Naive Bayes algorithm — a gateway to probabilistic machine learning. Uncover its principles, applications, and mathematical core in a concise exploration.
 pubDate: 2020-02-06T00:00:00Z
 imgSrc: '/assets/images/naivebayes.png'
 imgAlt: 'Image post'
@@ -16,7 +16,7 @@ In this blog post, we will introduce the Naive Bayes algorithm, explain how it w
 
 ## What is Naive Bayes Algorithm?
 
-The Naive Bayes algorithm is a machine learning technique based on Bayes theorem, which is a fundamental concept in probability theory. Bayes' theorem describes the probability of an event occurring based on prior knowledge of related conditions. The theorem is based on conditional probability and is widely used in machine learning to make predictions based on evidence.
+The Naive Bayes algorithm is a machine learning technique based on Bayes theorem, which is a fundamental concept in probability theory. Bayes theorem describes the probability of an event occurring based on prior knowledge of related conditions. This theorem is based on conditional probability and is widely used in machine learning to make predictions based on evidence.
 
 
 $$
@@ -72,7 +72,7 @@ When a new email arrives, we can use these probabilities to calculate the probab
 
 ## The Geometry Of Changing Beliefs
 
-Bayes theorem is a fundamental concept in probability theory that allows us to update our beliefs based on new evidence. At the heart of Bayes' theorem is the notion that evidence should update beliefs, not determine them.
+Bayes theorem is a fundamental concept in probability theory that allows us to update beliefs based on new evidence. At the heart of Bayes theorem is the notion that evidence should update beliefs, not determine them.
 
 The theorem is based on two types of probabilities: prior probability and posterior probability. The prior probability is our initial belief or probability before we receive any new evidence. In contrast, the posterior probability is the updated belief or probability after we have taken the new evidence into account.
 
@@ -90,7 +90,7 @@ P(E|H) = probability of evidence being true given the hypothesis holds (likeliho
 
 Bayesian updating is a process that can be represented geometrically using a probability space. The prior probabilities are represented as a point in this space, and the observed data is represented as a region corresponding to the new evidence. The updated probabilities are represented by a new point in the probability space.
 
-In the context of Naive Bayes, we start with prior probabilities representing our beliefs about the likelihood of a data point belonging to each category. For example, if we're classifying emails as spam or not spam, our prior probabilities might represent our initial beliefs about the likelihood of an email being spam or not. Then, when we observe new data (e.g., a new email), we use Bayes' theorem to update our prior probabilities based on this new evidence. Specifically, we adjust our prior probabilities to take into account how likely the observed data is under each category. This adjustment causes the degree of belief (i.e., the probability) for each category to shift.
+In the context of Naive Bayes, we start with prior probabilities representing our beliefs about the likelihood of a data point belonging to each category. For example, if we're classifying emails as spam or not spam, our prior probabilities might represent our initial beliefs about the likelihood of an email being spam or not. Then, when we observe new data (e.g., a new email), we use Bayes theorem to update our prior probabilities based on this new evidence. Specifically, we adjust our prior probabilities to take into account how likely the observed data is under each category. This adjustment causes the degree of belief (i.e., the probability) for each category to shift.
 
 ## Applications of Naive Bayes Algorithm
 
