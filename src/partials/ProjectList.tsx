@@ -16,54 +16,50 @@ const ProjectList = () => (
   >
     <div className="flex flex-col gap-6">
       <Project
-        name="Project 1"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        bibendum. Nunc non posuere consectetur, justo erat semper enim, non
-        hendrerit dui odio id enim."
-        link="/"
+        name="Machine Learning Projects"
+        description="Dive into the dynamic realm of machine learning through a curated collection of diverse projects.
+        This exploration spans various algorithms, including Linear Regression, Naive Bayes, Support Vector Machines,
+        Decision Trees, Random Forest, K-Means Clustering, Time Series Analysis, and more."
+        link="https://github.com/rupeshbug?tab=repositories"
         img={{
           src: '/assets/images/project-web-design.png',
           alt: 'Project Web Design',
         }}
         category={
           <>
-            <Tags color={ColorTags.FUCHSIA}>Astro.js</Tags>
-            <Tags color={ColorTags.LIME}>Web design</Tags>
-            <Tags color={ColorTags.SKY}>Tailwind.css</Tags>
-            <Tags color={ColorTags.ROSE}>TypeScript</Tags>
+            <Tags color={ColorTags.FUCHSIA}>Data Science </Tags>
+            <Tags color={ColorTags.LIME}>Machine Learning</Tags>
           </>
         }
       />
       <Project
-        name="Project 2"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        bibendum. Nunc non posuere consectetur, justo erat semper enim, non
-        hendrerit dui odio id enim."
-        link="/"
+        name="JavaFX Quiz App"
+        description="Discover the JavaFX Quiz App, a dynamic application seamlessly blending education and entertainment. 
+        Offering an engaging citizenship assessment test—MasathaiQuiz—it enables people fosters unity among individuals from Malaysia, Thailand, 
+        and Singapore."
+        link="https://github.com/rupeshbug/MasathaiQuiz"
         img={{ src: '/assets/images/project-fire.png', alt: 'Project Fire' }}
         category={
           <>
-            <Tags color={ColorTags.VIOLET}>Next.js</Tags>
-            <Tags color={ColorTags.EMERALD}>Blog</Tags>
-            <Tags color={ColorTags.YELLOW}>JavaScript</Tags>
+            <Tags color={ColorTags.VIOLET}>Java</Tags>
+            <Tags color={ColorTags.EMERALD}>JavaFX</Tags>
+            <Tags color={ColorTags.YELLOW}>CSS</Tags>
           </>
         }
       />
-      <Project
-        name="Project 3"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        bibendum. Nunc non posuere consectetur, justo erat semper enim, non
-        hendrerit dui odio id enim."
-        link="/"
+      {/* <Project
+        name="eVote"
+        description="A secure online voting platform made using Next.js and Tailwind CSS for university assignment."
+        link="https://github.com/rupeshbug/eVote"
         img={{ src: '/assets/images/project-maps.png', alt: 'Project Maps' }}
         category={
           <>
-            <Tags color={ColorTags.FUCHSIA}>Astro.js</Tags>
-            <Tags color={ColorTags.INDIGO}>Bootstrap</Tags>
-            <Tags color={ColorTags.ROSE}>TypeScript</Tags>
+            <Tags color={ColorTags.FUCHSIA}>NextJS</Tags>
+            <Tags color={ColorTags.INDIGO}>Tailwind CSS</Tags>
+            <Tags color={ColorTags.ROSE}>Prisma</Tags>
           </>
         }
-      />
+      /> */}
     </div>
   </Section>
 );
