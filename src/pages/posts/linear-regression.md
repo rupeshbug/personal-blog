@@ -2,7 +2,7 @@
 layout: '@/templates/BasePost.astro'
 title: 'Linear Regression Analysis For Predictive Modeling'
 description: Explore Linear Regression:a predictive modeling essential. Unveil principles and maths briefly. Decode coefficients, intercept, and errors. Vital for nuanced predictions and decisions.
-pubDate: 2023-02-06T00:00:00Z
+pubDate: 2023-03-06T00:00:00Z
 imgSrc: '/assets/images/best-fit-line.png'
 imgAlt: 'Image post'
 ---

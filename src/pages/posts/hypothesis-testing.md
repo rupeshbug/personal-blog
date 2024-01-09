@@ -2,7 +2,7 @@
 layout: '@/templates/BasePost.astro'
 title: 'Understanding Hypothesis Testing and its Applications in Data Science'
 description: Discover the intricacies of hypothesis testing — a cornerstone in statistical analysis. Uncover its principles, applications, and essential concepts in a concise journey that demystifies the world of statistical inference.
-pubDate: 2023-02-19T00:00:00Z
+pubDate: 2023-03-19T00:00:00Z
 imgSrc: '/assets/images/two-tailed-test.png'
 imgAlt: 'Image post'
 ---
