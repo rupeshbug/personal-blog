@@ -39,7 +39,7 @@ The interpretation of regression coefficients is essential to understanding the 
 
 Linear regression is all about finding the best-fit line. The best-fitting line is the line that minimizes the sum of the squared differences between the observed values of the dependent variable and the predicted values from the regression equation. In other words, it is the line that is closest to all of the data points. To calculate the best-fitting line, we can use the method of least squares. This involves finding the values of the intercept and regression coefficient that minimize the sum of the squared differences between the observed values and the predicted values from the regression equation.
 
-![best-fit line.png](Linear%20Regression%20Analysis%20For%20Predictive%20Modeling%20c0b16abb559047a080ed80794788ed70/best-fit_line.png)
+![best-fit-line.png](Linear%20Regression%20Analysis%20For%20Predictive%20Modeling%20c0b16abb559047a080ed80794788ed70/best-fit_line.png)
 
                                                            Best-Fit Line; Image By Author
 
