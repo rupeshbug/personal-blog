@@ -19,7 +19,7 @@ In this blog post, we will introduce the Naive Bayes algorithm, explain how it w
 The Naive Bayes algorithm is a machine learning technique based on Bayes theorem, which is a fundamental concept in probability theory. Bayes theorem describes the probability of an event occurring based on prior knowledge of related conditions. This theorem is based on conditional probability and is widely used in machine learning to make predictions based on evidence.
 
 $$
-P(A|B) = \frac {P(B|A).P(A)}{P(B)}
+P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)}
 $$
 
 Here,
@@ -39,18 +39,18 @@ The above formula is easily comprehensible for solving high school problems, but
 This can be expressed as:
 
 $$
-P(y|x_1, x_2,....,x_n) = \frac {P(x_1|y).P(x_2|y).....P(x_n|y).P(y)}{P(x_1).P(x_2).....P(x_n)}
+P(y|x_1, x_2,....,x_n) = \frac {P(x_1|y) \cdot P(x_2|y).....P(x_n|y) \cdot P(y)}{P(x_1) \cdot P(x_2)....P(x_n)}
 $$
 
-$$ P(y|x_1,x_2,...,x_n) = \frac {P(y) \prod_{i=1}^{i=n} P(x_i|y)}{P(x_1).P(x_2)....P(x_n)}
-
+$$ 
+P(y|x_1,x_2,...,x_n) = \frac {P(y) \prod_{i=1}^{i=n} P(x_i|y)}{P(x_1) \cdot P(x_2)....P(x_n)} 
 $$
 
-The denominator terms $P(x_1)P(x_2)....P(x_n)$ are the same for all classes and do not depend on the class label. To simplify the calculations, we can ignore the denominator when comparing the probabilities of different classes to make a prediction.
+The denominator terms $P(x_1), P(x_2)....P(x_n)$ are the same for all classes and do not depend on the class label. To simplify the calculations, we can ignore the denominator when comparing the probabilities of different classes to make a prediction.
 
-$$ P(y|x_1,x_2,...,x_n) ∝ P(y) ∏_{i=1}^{n} P(x_i|y))
+$$ 
+P(y|x_1,x_2,...,x_n) ∝ P(y) ∏_{i=1}^{n} P(x_i|y) 
 $$
-
 
 
 To create a classifier model using the Naive Bayes algorithm, we calculate the probability of a given input for all possible values of the class variable y. The resulting value ranges between 0 and 1. We select the output with the highest probability, as it is the most likely class given the input features. 
@@ -68,7 +68,7 @@ We can represent each email as a set of features, such as the presence or absenc
 We can use a training dataset of labeled emails to calculate the probabilities of each feature for each category. For example, we can calculate the probability of the word "lottery" appearing in a spam email and the probability of it appearing in a non-spam email.
 
 When a new email arrives, we can use these probabilities to calculate the probability of the email belonging to each category. We can then assign the email to the category with the highest probability.
-
+ 
 ## The Geometry Of Changing Beliefs
 
 Bayes theorem is a fundamental concept in probability theory that allows us to update beliefs based on new evidence. At the heart of Bayes theorem is the notion that evidence should update beliefs, not determine them.
@@ -106,7 +106,7 @@ Naive Bayes' simplicity and speed make it a popular choice in many fields, inclu
 
 ## Conclusion
 
-In conclusion, the Naive Bayes algorithm is a powerful and widely used probabilistic machine learning technique. It is based on the Bayes theorem and the assumption of independence between features. The algorithm calculates the probability of each category based on the probabilities of the relevant features and assigns a data point to the category with the highest probability. I hope this blog post has given you a good overview of the Naive Bayes algorithm and its applications.
+In conclusion, the Naive Bayes algorithm is a powerful and widely used probabilistic machine learning technique. It is based on Bayes' theorem and the assumption of independence between features. The algorithm calculates the probability of each category based on the probabilities of the relevant features and assigns a data point to the category with the highest probability. This makes Naive Bayes a highly efficient and effective classifier for various applications, including text classification, sentiment analysis, image classification, and medical diagnosis. I hope this blog post has provided you with a clear understanding of the Naive Bayes algorithm and its practical applications in the field of machine learning.
 
 ## References and Recommendations
 

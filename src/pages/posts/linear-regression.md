@@ -37,7 +37,7 @@ Regression coefficients, also known as β-coefficients, represent the relationsh
 
 **Example: Education and Income**
 
-Imagine we study the link between years of education (x) and income (y). Our model yields:
+Imagine we study the link between years of education (x) and income in dollars (y). Our model yields:
 
 $$ y = 500 + 60x $$
 
@@ -61,13 +61,16 @@ Linear regression is based on several assumptions that must be met for the model
 
 1. **Linearity**: The relationship between the dependent variable and the independent variables is assumed to be linear. This means that a constant change in the independent variable will result in a constant change in the dependent variable.
 
-2. **Normality and homoscedasticity**: The errors in the model are assumed to be normally distributed and have equal variance across all levels of the independent variable. This means that the distribution of the residuals should be approximately normal, and the variance of the residuals should be constant across all levels of the independent variable.
+2. **Normality**: The residuals (errors) are assumed to be normally distributed. This means that the distribution of the residuals should be approximately normal.
 
-3. **Independence**: The observations used to fit the model are independent of each other. This means that the value of the dependent variable for one observation is not influenced by the value of the dependent variable for another observation.
+3. **Homoscedasticity**: The variance of the residuals should be constant across all levels of the independent variable.
 
-4. **No autocorrelation**: The errors in the model should be independent of each other. If there is autocorrelation, it suggests that there is some pattern in the residuals that the model has failed to capture.
+4. **Independence**: The observations used to fit the model are independent of each other. This means that the value of the dependent variable for one observation is not influenced by the value of the dependent variable for another observation.
 
-5. **No multicollinearity**: The independent variables should be independent of each other. This means that there should not be high correlations between the independent variables, as high correlations can lead to unstable estimates of the regression coefficients.
+5. **No autocorrelation**: The errors in the model should be independent of each other. If there is autocorrelation, it suggests that there is some pattern in the residuals that the model has failed to capture.
+
+6. **No multicollinearity**: The independent variables should not be highly correlated with each other. High correlations can lead to unstable estimates of the regression coefficients.
+
 
 ## Measuring the Performance of Regression Models
 
