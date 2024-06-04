@@ -39,13 +39,23 @@ There are many techniques used in feature engineering, each with its own strengt
 
 ### A. Imputation
 
-Imputation is the process of filling in missing values in our data. Missing values are common in datasets, and many machine-learning algorithms cannot handle them. There are different techniques that can be used for imputation, including mean imputation, median imputation, and mode imputation. Mean imputation involves filling in missing values with the mean value of the feature. Median imputation, on the other hand, involves filling in missing values with the median value of the feature. Mode imputation is used for categorical data and involves filling in missing values with the mode (most common/frequent) value of the feature.
+Imputation is the process of filling in missing values in our data. Missing values are common in datasets, and many machine-learning algorithms cannot handle them. There are different techniques that can be used for imputation, including mean imputation, median imputation, and mode imputation. 
+
+- **Mean Imputation**: Filling in missing values with the mean value of the feature.
+- **Median Imputation**: Filling in missing values with the median value of the feature.
+- **Mode Imputation**: Used for categorical data, filling in missing values with the mode (most common) value of the feature.
+
+
+**Practical Tip**: Median imputation is more robust to outliers than mean imputation.
 
 ### B. Scaling
 
-Scaling is a technique used to scale numerical variables so that they have the same range. This can improve the performance of machine learning models because many algorithms are sensitive to the scale of the features. Common scaling techniques include standardization and normalization.
+Scaling is a technique used to scale numerical variables so that they have the same range. This can improve the performance of machine learning models because many algorithms are sensitive to the scale of the features. 
 
-Normalization is a technique used to scale numerical data into a common range, typically between 0 and 1, in order to remove any biases and inconsistencies in the data. Standardization involves transforming the feature so that it has a mean of 0 and a standard deviation of 1. Normalization and standardization are done to ensure that features with large numerical values do not dominate the model's learning process. When features have varying ranges, units, and scales, the model may give more weight and importance to features with higher values, resulting in incorrect predictions.
+- **Normalization**: Scaling numerical data to a user-defined range like between 0 to 1.
+- **Standardization**: Transforming the feature so that it has a mean of 0 and a standard deviation of 1.
+
+**Note**: Scaling is particularly important for algorithms like SVM and KNN that rely on distance measurements.
 
 ### C. One-Hot Encoding
 
@@ -57,7 +67,11 @@ For example, if you have a categorical variable "fruit" with values "apple," "ba
 
 Outliers are extreme values that can significantly affect our models. It is critical to handle them correctly so that they do not skew the results of our analysis. Techniques like removing outliers, capping them at a certain value, using z-scores to detect outliers, or transforming them using log transformation are commonly used.
 
-Removing outliers can be done by setting a threshold for what is considered an outlier and removing any values that exceed that threshold. Capping outliers involves limiting how extreme a value can be and capping any values that exceed that limit. Transforming outliers using a log transformation can be useful when the data has a long tail distribution.
+- **Removing Outliers**: Setting a threshold and removing values that exceed it.
+- **Capping Outliers**: Limiting extreme values to a certain threshold.
+- **Log Transformation**: Transforming the data using the logarithm to reduce the impact of outliers.
+
+**Practical Tip**: Visualize your data with box plots or histograms to identify outliers effectively.
 
 ### E. Transformation
 
@@ -65,9 +79,11 @@ Variable transformation is the process of applying mathematical functions to fea
 
 Some common variable transformation techniques include logarithmic transformation, square root transformation, and Box-Cox transformation. Logarithmic transformation involves taking the logarithm of the feature, while square root transformation involves taking the square root of the feature. Box-Cox transformation is a more general technique that involves finding the optimal transformation for a given feature using maximum likelihood estimation.
 
+**Example**: Transforming a skewed distribution into a more normal distribution can improve model performance.
+
 ## Conclusion
 
-Feature engineering is a crucial step in building effective and accurate machine learning models. It involves selecting, transforming, and manipulating raw data to create features that can be used to train models. Techniques such as imputation, one-hot encoding, scaling, handling outliers, and variable transformation can be used to improve the quality of features.
+Feature engineering is a crucial step in building effective and accurate machine learning models. It involves selecting, transforming, and manipulating raw data to create features that can be used to train models. Techniques such as imputation, one-hot encoding, scaling, handling outliers, and variable transformation can be used to improve the quality of features. By carefully crafting and selecting features, data scientists can significantly enhance the performance of their machine learning models, leading to more accurate predictions and deeper insights into the data.
 
 Coming up with features is difficult, time-consuming, and requires expert knowledge. ‘Applied machine learning’ is basically feature engineering — Prof. Andrew Ng.
 
