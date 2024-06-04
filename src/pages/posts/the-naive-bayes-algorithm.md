@@ -2,7 +2,7 @@
 layout: '@/templates/BasePost.astro'
 title: 'The Naive Bayes Algorithm: Introduction to Probabilistic Machine Learning'
 description: Dive into the Naive Bayes algorithm — a gateway to probabilistic machine learning. Uncover its principles, applications, and mathematical core in a concise exploration.
-pubDate: 2023-04-02T00:00:00Z
+pubDate: 2023-08-02T00:00:00Z
 imgSrc: '/assets/images/naivebayes.png'
 imgAlt: 'Image post'
 ---
@@ -17,7 +17,6 @@ In this blog post, we will introduce the Naive Bayes algorithm, explain how it w
 ## What is Naive Bayes Algorithm?
 
 The Naive Bayes algorithm is a machine learning technique based on Bayes theorem, which is a fundamental concept in probability theory. Bayes theorem describes the probability of an event occurring based on prior knowledge of related conditions. This theorem is based on conditional probability and is widely used in machine learning to make predictions based on evidence.
-
 
 $$
 P(A|B) = \frac {P(B|A).P(A)}{P(B)}
