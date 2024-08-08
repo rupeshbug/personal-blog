@@ -1,8 +1,8 @@
 ---
 layout: '@/templates/BasePost.astro'
 title: 'Linear Regression Analysis For Predictive Modeling'
-description: Explore Linear Regression:a statistical technique for predictive modeling. Unveil principles and maths briefly. Decode coefficients, intercept, and errors. Vital for nuanced predictions and decisions.
-pubDate: 2023-07-06T00:00:00Z
+description: 'Explore Linear Regression: a statistical technique for predictive modeling. Unveil principles and maths briefly. Decode coefficients, intercept, and errors. Vital for nuanced predictions and decisions.'
+pubDate: 2024-03-12T00:00:00Z
 imgSrc: '/assets/images/best-fit-line.png'
 imgAlt: 'Image post'
 ---

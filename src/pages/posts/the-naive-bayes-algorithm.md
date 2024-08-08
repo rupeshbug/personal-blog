@@ -2,7 +2,7 @@
 layout: '@/templates/BasePost.astro'
 title: 'The Naive Bayes Algorithm: Introduction to Probabilistic Machine Learning'
 description: Dive into the Naive Bayes algorithm — a gateway to probabilistic machine learning. Uncover its principles, applications, and mathematical core in a concise exploration.
-pubDate: 2023-08-02T00:00:00Z
+pubDate: 2024-05-02T00:00:00Z
 imgSrc: '/assets/images/naivebayes.png'
 imgAlt: 'Image post'
 ---

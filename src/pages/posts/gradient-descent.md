@@ -1,7 +1,7 @@
 ---
 layout: '@/templates/BasePost.astro'
 title: 'Gradient Descent: The Never-Ending Quest for a Better Solution'
-description: Understand the Theory of Gradient Descent:Explore how this fundamental tool optimizes machine learning models, minimizing errors and enhancing performance effectively.
+description: 'Understand the Theory of Gradient Descent: Explore how this fundamental tool optimizes machine learning models, minimizing errors and enhancing performance effectively.'
 pubDate: 2024-06-20T00:00:00Z
 imgSrc: '/assets/images/gradient-descent.png'
 imgAlt: 'Image post'

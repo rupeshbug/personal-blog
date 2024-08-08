@@ -2,7 +2,7 @@
 layout: '@/templates/BasePost.astro'
 title: 'Data Alchemy: The Magic of Feature Engineering for Better Models'
 description: Learn the art of feature engineering — a transformative process in the realm of machine learning. Familiarize yourself with the  techniques of selecting, manipulating, and transforming raw data into influential features that enhance your model's predictive capabilities.
-pubDate: 2023-07-11T00:00:00Z
+pubDate: 2024-04-19T00:00:00Z
 imgSrc: '/assets/images/feature-engineering.png'
 imgAlt: 'Image post'
 ---
