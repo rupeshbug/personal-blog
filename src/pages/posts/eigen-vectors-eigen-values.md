@@ -48,12 +48,26 @@ We first generate a synthetic dataset representing daily closing prices of five 
 ``` python 
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 
-# Simulated stock prices
 np.random.seed(42)
-days = 100
-prices = np.cumprod(1 + 0.01 * np.random.randn(days, 5), axis=0)
-df_prices = pd.DataFrame(prices, columns=["Stock_A", "Stock_B", "Stock_C", "Stock_D", "Stock_E"])
+
+n_days = 100
+n_stocks = 5
+stock_names = ['Stock_A', 'Stock_B', 'Stock_C', 'Stock_D', 'Stock_E']
+
+# Generate random daily returns with correlation
+base_returns = np.random.normal(0, 0.01, size=(n_days, 1))  # market-wide movement
+noise = np.random.normal(0, 0.005, size=(n_days, n_stocks)) 
+
+returns = base_returns @ np.ones((1, n_stocks)) + noise  # common + individual movement
+prices = 100 * np.exp(np.cumsum(returns, axis=0))  # convert to prices
+
+# Create a DataFrame
+df_prices = pd.DataFrame(prices, columns=stock_names)
+
+# Show the head
+df_prices.head()
 
 # Compute daily log returns
 df_returns = np.log(df_prices / df_prices.shift(1)).dropna()
@@ -66,7 +80,7 @@ A daily return measures the percentage change in a stock’s price from one day 
 The covariance matrix captures how each stock’s returns move in relation to every other stock. Its diagonal elements represent the variance of each stock (how much each fluctuates), and the off-diagonal elements show covariances (how pairs of stocks move together).
 
 ``` python
-cov_matrix = np.cov(df_returns.T)
+cov_matrix = df_returns.cov()
 ```
 - Diagonal elements = variance of each stock
 - Off-diagonal elements = covariance between different stocks
