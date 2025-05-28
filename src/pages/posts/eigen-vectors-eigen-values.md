@@ -10,11 +10,11 @@ imgAlt: 'Image post'
 # Unveiling Stock Market Patterns with Eigenvectors and Covariance Analysis
 
 
-# Introduction: The Power of Math in Finance
+## Introduction: The Power of Math in Finance
 
 Ever wondered how concepts from high school math class—like matrices, vectors, and eigenvalues—can actually be used to understand the real world? More specifically, how these tools can reveal hidden patterns in something as chaotic as the stock market? In this blog, we’ll explore how linear algebra powers the analysis of stock return relationships using eigen decomposition of the covariance matrix, helping us discover underlying patterns in how stocks move together.
 
-# A Quick Primer: What Are Eigenvectors, Eigenvalues, and the Covariance Matrix?
+### A Quick Primer: What Are Eigenvectors, Eigenvalues, and the Covariance Matrix?
 
 Suppose we have a matrix A that represents a transformation (like our covariance matrix). If we apply it to a vector x, we usually get a new vector pointing in a different direction. However, there are special vectors—called eigenvectors—that don’t change direction when transformed by A. They only get stretched or compressed. Formally:
 
@@ -37,11 +37,11 @@ Now, what is a **covariance matrix**?
 
 By performing eigen decomposition on this matrix, we can uncover the main directions in which the data varies—i.e., the dominant patterns of co-movement in our stock returns.
 
-## The Problem: Too Many Stocks, Too Much Noise
+### The Problem: Too Many Stocks, Too Much Noise
 
 Suppose you're analyzing the daily returns of 5 different stocks: Stock_A to Stock_E. Each of these stocks moves up and down based on a variety of factors—company news, economic indicators, global events, etc. The challenge is: can we uncover any underlying structure in these movements?
 
-### Step 1: Create and Prepare the Dataset
+#### Step 1: Create and Prepare the Dataset
 
 We first generate a synthetic dataset representing daily closing prices of five stocks. Then, we compute their daily log returns:
 
@@ -61,7 +61,7 @@ df_returns = np.log(df_prices / df_prices.shift(1)).dropna()
 
 A daily return measures the percentage change in a stock’s price from one day to the next, but instead of simple returns, we often use log returns—calculated as the natural logarithm of the ratio between consecutive prices. Log returns are preferred in quantitative finance because they are time-additive (meaning you can sum them over multiple periods to get total returns), tend to be more normally distributed, and help stabilize variance, all of which make them more suitable for statistical modeling and analysis.
 
-### Step 2: Compute the Covariance Matrix
+#### Step 2: Compute the Covariance Matrix
 
 The covariance matrix tells us how each stock's returns move in relation to others.
 
@@ -71,7 +71,7 @@ cov_matrix = np.cov(df_returns.T)
 - Diagonal elements = variance of each stock
 - Off-diagonal elements = covariance between different stocks
 
-### Step 3: Perform Eigen Decomposition
+#### Step 3: Perform Eigen Decomposition
 
 Eigen decomposition helps us find the principal directions in which variance occurs:
 
@@ -90,7 +90,7 @@ print("Eigenvectors (each column is a principal direction):")
 print(pd.DataFrame(eigenvectors, columns=["PC1", "PC2", "PC3", "PC4", "PC5"], index=df_returns.columns))
 ```
 
-### How Much Does Each Direction Explain?
+#### How Much Does Each Direction Explain?
 
 Now let’s see how much of the total variance is explained by each eigenvector:
 
