@@ -57,11 +57,11 @@ n_stocks = 5
 stock_names = ['Stock_A', 'Stock_B', 'Stock_C', 'Stock_D', 'Stock_E']
 
 # Generate random daily returns with correlation
-base_returns = np.random.normal(0, 0.01, size=(n_days, 1))  # market-wide movement
+base_returns = np.random.normal(0, 0.01, size=(n_days, 1))
 noise = np.random.normal(0, 0.005, size=(n_days, n_stocks)) 
 
-returns = base_returns @ np.ones((1, n_stocks)) + noise  # common + individual movement
-prices = 100 * np.exp(np.cumsum(returns, axis=0))  # convert to prices
+returns = base_returns @ np.ones((1, n_stocks)) + noise
+prices = 100 * np.exp(np.cumsum(returns, axis=0))
 
 # Create a DataFrame
 df_prices = pd.DataFrame(prices, columns=stock_names)
