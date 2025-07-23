@@ -1,7 +1,7 @@
 ---
 layout: '@/templates/BasePost.astro'
 title: 'Building an AI Agent with Long-Term Memory Using Vector Database'
-description: 'Learn how to build a command-line AI assistant that remembers user input across sessions by integrating LangGraph, LangChain, and FAISS for persistent memory and improved context.'
+description: 'Learn how to build a command-line AI assistant that remembers user input across sessions by integrating LangGraph, LangChain, and FAISS vector database for persistent memory and improved context.'
 pubDate: 2025-07-23T00:00:00Z
 imgSrc: '/assets/images/ai_agent_blog.png'
 imgAlt: 'Illustration of an AI chatbot in a terminal with memory recall features'
@@ -31,7 +31,7 @@ Install the required dependencies:
 pip install langchain langgraph langchain-community langchain-google-genai faiss-cpu python-dotenv
 ```
 
-You’ll need an API key from [Google AI Studio](https://makersuite.google.com/app){:target="_blank"}. It’s free to sign up and lets you use LLMs like Gemini.
+You’ll need an API key from [Google AI Studio](https://makersuite.google.com/app). It’s free to sign up and lets you use LLMs like Gemini.
 
 Create a `.env` file:
 
@@ -61,6 +61,10 @@ from langchain_core.tools import tool
 from langgraph.checkpoint.memory import MemorySaver
 from langgraph.graph import END, START, MessagesState, StateGraph
 from langgraph.prebuilt import ToolNode
+
+load_dotenv()
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+
 ```
 
 ## 1. Initializing the LLM and Embeddings
