@@ -1,13 +1,13 @@
 ---
 layout: '@/templates/BasePost.astro'
-title: 'Building a Terminal-Based AI Agent with Long-Term Memory'
-description: 'Learn how to build a command-line AI assistant that remembers user input across sessions using LangGraph, LangChain, and FAISS for persistent memory.'
+title: 'Building an AI Agent with Long-Term Memory Using Vector Database'
+description: 'Learn how to build a command-line AI assistant that remembers user input across sessions by integrating LangGraph, LangChain, and FAISS for persistent memory and improved context.'
 pubDate: 2025-07-23T00:00:00Z
 imgSrc: '/assets/images/ai_agent_blog.png'
 imgAlt: 'Illustration of an AI chatbot in a terminal with memory recall features'
 ---
 
-# Building a Terminal-Based AI Agent with Long-Term Memory
+# Building an AI Agent with Long-Term Memory Using Vector Database
 
 This tutorial shows how to implement an agent with long-term memory capabilities using LangGraph. The agent can store, retrieve, and use memories to enhance its interactions with users.
 
@@ -258,6 +258,8 @@ builder.add_edge("tools", "agent")
 
 graph = builder.compile(checkpointer=MemorySaver())
 ```
+
+![agent_workflow.png](/assets/images/agent_workflow.png)
 
 ---
 
