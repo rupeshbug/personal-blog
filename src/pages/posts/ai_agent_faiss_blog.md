@@ -31,7 +31,7 @@ Install the required dependencies:
 pip install langchain langgraph langchain-community langchain-google-genai faiss-cpu python-dotenv
 ```
 
-You’ll need an API key from [Google AI Studio](https://makersuite.google.com/app). It’s free to sign up and lets you use LLMs like Gemini.
+You’ll need an API key from [Google AI Studio](https://makersuite.google.com/app){:target="_blank"}. It’s free to sign up and lets you use LLMs like Gemini.
 
 Create a `.env` file:
 
