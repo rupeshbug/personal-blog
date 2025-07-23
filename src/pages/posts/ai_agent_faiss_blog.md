@@ -3,7 +3,7 @@ layout: '@/templates/BasePost.astro'
 title: 'Building a Terminal-Based AI Agent with Long-Term Memory'
 description: 'Learn how to build a command-line AI assistant that remembers user input across sessions using LangGraph, LangChain, and FAISS for persistent memory.'
 pubDate: 2025-07-23T00:00:00Z
-imgSrc: '/assets/images/stock.png'
+imgSrc: '/assets/images/ai_agent_blog.png'
 imgAlt: 'Illustration of an AI chatbot in a terminal with memory recall features'
 ---
 
