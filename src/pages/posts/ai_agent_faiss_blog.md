@@ -276,5 +276,3 @@ You can enhance this by:
 
 This was a great intro to combining LangGraph + LangChain + FAISS for **agentic memory** in a real, persistent way.
 
-Let me know if you'd like to export it as a blog, PDF, or HTML!
-
