@@ -1,10 +1,10 @@
 ---
 layout: '@/templates/BasePost.astro'
-title: 'Unveiling Stock Market Patterns with Eigenvectors and Covariance Analysis'
-description: 'Discover how linear algebra concepts like eigenvectors, eigenvalues, and covariance matrices reveal hidden patterns in stock returns. Learn with Python code how to extract dominant trends from multiple stocks using real mathematical tools.'
+title: 'Building a Terminal-Based AI Agent with Long-Term Memory'
+description: 'Learn how to build a command-line AI assistant that remembers user input across sessions using LangGraph, LangChain, and FAISS for persistent memory.'
 pubDate: 2025-07-23T00:00:00Z
 imgSrc: '/assets/images/stock.png'
-imgAlt: 'Image post'
+imgAlt: 'Illustration of an AI chatbot in a terminal with memory recall features'
 ---
 
 # Building a Terminal-Based AI Agent with Long-Term Memory
