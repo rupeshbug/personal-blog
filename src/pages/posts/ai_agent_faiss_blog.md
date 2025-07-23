@@ -41,6 +41,28 @@ GOOGLE_API_KEY=your_google_api_key
 
 ---
 
+### 📦 Required Imports
+
+Before we begin, make sure to include the following imports. These cover everything from environment setup and embeddings to LangGraph nodes and memory management:
+
+```python
+import os
+import uuid
+from typing import List
+from dotenv import load_dotenv
+
+from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmbeddings
+from langchain_community.vectorstores import FAISS
+from langchain_core.documents import Document
+from langchain_core.messages import get_buffer_string
+from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.runnables import RunnableConfig
+from langchain_core.tools import tool
+from langgraph.checkpoint.memory import MemorySaver
+from langgraph.graph import END, START, MessagesState, StateGraph
+from langgraph.prebuilt import ToolNode
+```
+
 ## 1. Initializing the LLM and Embeddings
 
 We use Gemini (via `langchain_google_genai`) and Google's embedding model.
