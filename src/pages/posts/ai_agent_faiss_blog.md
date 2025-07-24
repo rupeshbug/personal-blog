@@ -31,7 +31,7 @@ Install the required dependencies:
 pip install langchain langgraph langchain-community langchain-google-genai faiss-cpu python-dotenv
 ```
 
-You’ll need an API key from [Google AI Studio](https://makersuite.google.com/app). It’s free to sign up and lets you use LLMs like Gemini.
+We’ll need an API key from [Google AI Studio](https://makersuite.google.com/app). It’s free to sign up and lets us use LLMs like Gemini.
 
 Create a `.env` file:
 
@@ -145,7 +145,7 @@ def search_recall_memories(query: str, config: RunnableConfig) -> List[str]:
     ]
     return filtered[:3]
 ```
-**Note**: You need to provide a **docstring** for functions defined using `@tool`. This is required by LangChain to generate the tool's description.
+**Note**: We need to provide a **docstring** for functions defined using `@tool`. This is required by LangChain to generate the tool's description.
 
 > ❓ **Common Question**: *"What does the agent decide to remember?"*\
 > That depends on the model. When the prompt tells the model it has a memory-saving tool, it decides what to save via tool calls.
