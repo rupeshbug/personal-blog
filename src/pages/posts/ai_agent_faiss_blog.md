@@ -294,13 +294,12 @@ def terminal_chat():
 
 ## Final Thoughts
 
-You now have a terminal-based AI assistant that can recall past interactions.
+We’ve built a terminal-based AI assistant that remembers past interactions — a step closer to truly personalized AI experiences. Unlike typical chatbots that forget everything after a session ends, this agent recalls meaningful details, adapts over time, and grows with each conversation.
 
-You can enhance this by:
+This chatbot can be further enhanced in multiple ways like:
 
 - Expanding memory scope (e.g., per-project or per-topic)
 - Logging interactions
 - Running the same memory architecture in a web app
 
 This was a great intro to combining LangGraph + LangChain + FAISS for **agentic memory** in a real, persistent way.
-
