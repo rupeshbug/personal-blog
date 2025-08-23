@@ -173,7 +173,7 @@ prompt = ChatPromptTemplate.from_messages(
             "2. Make informed suppositions and extrapolations based on stored"
             " memories.\n"
             "3. Regularly reflect on past interactions to identify patterns and"
-            " preferences.\n"
+            " preferences of the user.\n"
             "4. Update your mental model of the user with each new piece of"
             " information.\n"
             "5. Cross-reference new information with existing memories for"
