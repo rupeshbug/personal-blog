@@ -16,7 +16,7 @@ Ever wondered how concepts from high school math class—like matrices, vectors,
 
 ### A Quick Primer: What Are Eigenvectors, Eigenvalues, and the Covariance Matrix?
 
-Suppose we have a matrix A that represents a transformation (like our covariance matrix). If we apply it to a vector x, we usually get a new vector pointing in a different direction. However, there are special vectors—called eigenvectors—that don’t change direction when transformed by A. They only get stretched or compressed. Formally:
+Suppose we have a matrix A that represents a transformation. If we apply it to a vector x, we usually get a new vector pointing in a different direction. However, there are special vectors—called eigenvectors—that don’t change direction when transformed by A. They only get stretched or compressed. Formally:
 
 $$
 A * x = \lambda x
