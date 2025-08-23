@@ -17,7 +17,7 @@ We'll build a terminal-based chatbot that remembers important details using a ve
 
 ## Why Long-Term Memory?
 
-Typical LLM agents are stateless. That means they forget what you said the last time. To simulate memory, we can persist selected memories in a vector database and retrieve them contextually in the next conversation.
+Typical LLM agents are stateless. That means they forget what the user said the last time. To simulate memory, we can persist selected memories in a vector database and retrieve them contextually in the next conversation.
 
 This way, when you tell the AI your name today, it'll remember it tomorrow.
 
