@@ -28,7 +28,7 @@ const ProjectList = () => (
             <Tags color={ColorTags.BLUE}>Next.js</Tags>
             <Tags color={ColorTags.INDIGO}>LangChain</Tags>
             <Tags color={ColorTags.PURPLE}>OpenAlex API</Tags>
-            <Tags color={ColorTags.SKY}>AI</Tags>
+            <Tags color={ColorTags.SKY}>AI Agents</Tags>
           </>
         }
       />
