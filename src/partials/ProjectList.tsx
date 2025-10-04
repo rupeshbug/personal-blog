@@ -17,7 +17,7 @@ const ProjectList = () => (
     <div className="flex flex-col gap-6">
       <Project
         name="AI Research Assistant"
-        description="An intelligent research assistant built with Next.js, OpenAlex, and LangChain. It allows users to search academic papers, summarize research insights, and interact conversationally with AI for efficient literature exploration."
+        description="AI Research Agent: Query academic papers via OpenAlex, rank them based on criteria like recency, relevancy, or citation count, and use LangChain to summarize insights and analyze research gaps."
         link="https://research-copilot-five.vercel.app/"
         img={{
           src: '/assets/images/project-fire.png',
