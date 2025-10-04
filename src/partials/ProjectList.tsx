@@ -37,7 +37,7 @@ const ProjectList = () => (
         description="An intelligent research assistant built with Next.js, OpenAlex, and LangChain. It allows users to search academic papers, summarize research insights, and interact conversationally with AI for efficient literature exploration."
         link="https://research-copilot-five.vercel.app/"
         img={{
-          src: '/assets/images/project-ai-research.png',
+          src: '/assets/images/project-fire.png',
           alt: 'AI Research Assistant',
         }}
         category={
