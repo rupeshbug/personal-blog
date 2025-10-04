@@ -33,17 +33,19 @@ const ProjectList = () => (
         }
       />
       <Project
-        name="JavaFX Quiz App"
-        description="Discover the JavaFX Quiz App, a dynamic application seamlessly blending education and entertainment. 
-        Offering an engaging citizenship assessment test—MasathaiQuiz—it enables people fosters unity among individuals from Malaysia, Thailand, 
-        and Singapore."
-        link="https://github.com/rupeshbug/MasathaiQuiz"
-        img={{ src: '/assets/images/project-fire.png', alt: 'Project Fire' }}
+        name="AI Research Assistant"
+        description="An intelligent research assistant built with Next.js, OpenAlex, and LangChain. It allows users to search academic papers, summarize research insights, and interact conversationally with AI for efficient literature exploration."
+        link="https://research-copilot-five.vercel.app/"
+        img={{
+          src: '/assets/images/project-ai-research.png',
+          alt: 'AI Research Assistant',
+        }}
         category={
           <>
-            <Tags color={ColorTags.VIOLET}>Java</Tags>
-            <Tags color={ColorTags.EMERALD}>JavaFX</Tags>
-            <Tags color={ColorTags.YELLOW}>CSS</Tags>
+            <Tags color={ColorTags.BLUE}>Next.js</Tags>
+            <Tags color={ColorTags.INDIGO}>LangChain</Tags>
+            <Tags color={ColorTags.PURPLE}>OpenAlex API</Tags>
+            <Tags color={ColorTags.SKY}>AI</Tags>
           </>
         }
       />
