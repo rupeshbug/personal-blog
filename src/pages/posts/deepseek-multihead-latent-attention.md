@@ -79,11 +79,11 @@ For each token embedding **x**, the model computes three different vectors:
 - **Value (V)**: "What information do I offer?"
 
 These are computed using learned weight matrices:
-- Q = x · `W_q`
-- K = x · `W_k` 
-- V = x · `W_v`
+- Q = x · $W_q$
+- K = x · $W_k$
+- V = x · $W_v$
 
-Where `W_q`, `W_k`, and `W_v` are trainable matrices learned during training.
+Where $W_q$, $W_k$, and $W_v$ are trainable matrices learned during training.
 
 ### Why Three Separate Vectors?
 
