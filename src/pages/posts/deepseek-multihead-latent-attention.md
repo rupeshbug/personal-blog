@@ -100,7 +100,7 @@ Think of it like this:
 
 Here's the step-by-step process:
 
-1. **Compute attention scores**: For each token, calculate Q · K^T (dot product of Query with all Keys)
+1. **Compute attention scores**: For each token, calculate Q · $K^T$ (dot product of Query with all Keys)
 2. **Scale**: Divide by √(dimension) to prevent exploding gradients
 3. **Softmax**: Convert scores to probabilities (weights that sum to 1)
 4. **Weighted sum**: Multiply these weights by Values and sum them up
@@ -133,7 +133,7 @@ This ensures the model doesn't "peek ahead" during training.
 
 How is this done technically? It's elegantly simple:
 
-Before applying softmax, the attention scores (logits) for future tokens are set to **−∞**. When softmax is applied, e^(−∞) = 0, effectively zeroing out attention to future positions.
+Before applying softmax, the attention scores (logits) for future tokens are set to **−∞**. When softmax is applied, $e^(−∞) = 0$, effectively zeroing out attention to future positions.
 
 Without this masking, during training the model would:
 - See all answers ahead of time
@@ -164,7 +164,7 @@ One attention mechanism simply cannot capture all these dimensions at once.
 
 ### The Multi-Head Solution
 
-To fix this, Transformer models use **multiple attention heads**, where each head has its own independently learned matrices W_q, W_k, W_v.
+To fix this, Transformer models use **multiple attention heads**, where each head has its own independently learned matrices $W_q$, $W_k$, $W_v$.
 
 For example, in a typical setup:
 - Total hidden dimension: 768
