@@ -133,7 +133,7 @@ This ensures the model doesn't "peek ahead" during training.
 
 How is this done technically? It's elegantly simple:
 
-Before applying softmax, the attention scores (logits) for future tokens are set to **−∞**. When softmax is applied, $e^(−∞) = 0$, effectively zeroing out attention to future positions.
+Before applying softmax, the attention scores (logits) for future tokens are set to **−∞**. When softmax is applied, $e^{-\infty} = 0$ = 0$, effectively zeroing out attention to future positions.
 
 Without this masking, during training the model would:
 - See all answers ahead of time
@@ -326,7 +326,8 @@ Traditional multi-head attention stores complete Key and Value vectors for each 
 
 **These K and V vectors across different heads contain redundant information.**
 
-If we have 32 heads, each with its own 128-dimensional K and V vectors, we're storing a lot of overlapping patterns. The different heads learn related features, not completely independent ones. This redundancy means we're wasting precious memory.
+In standard multi-head attention, each head has its own Key and Value projection matrices, so each head produces its own K and V vectors. But DeepSeek noticed something important:
+These K and V vectors across heads are not independent — they contain significant redundancy.
 
 ### DeepSeek's Solution: Compression Through Latent Space
 
@@ -401,11 +402,3 @@ Every innovation fixes a limitation in the previous idea. This is the natural ev
 - **Latent attention** → expressive and efficient
 
 Understanding this progression reveals something profound: AI progress isn't about sudden breakthroughs or magic. It's about identifying specific bottlenecks and solving them with elegant solutions, one insight at a time.
-
-DeepSeek's latent attention exists because someone deeply understood:
-1. What multi-head attention provides (diverse perspectives)
-2. What it costs (computation and memory)
-3. Where the inefficiency lies (computing all heads always)
-4. How to fix it (learned, dynamic activation)
-
-This is how AI progresses: by building on solid foundations, understanding trade-offs deeply, and asking better questions. The next breakthrough is waiting for someone who understands today's limitations well enough to imagine tomorrow's solutions.
