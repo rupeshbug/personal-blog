@@ -1,9 +1,9 @@
 ---
 layout: '@/templates/BasePost.astro'
 title: 'From Attention to Latent Attention: Understanding One of the Key Innovations That Empowered DeepSeek'
-description: 'Understand the Theory of Gradient Descent: Explore how this fundamental tool optimizes machine learning models, minimizing errors and enhancing performance effectively.'
-pubDate: 2024-06-20T00:00:00Z
-imgSrc: '/assets/images/gradient-descent.png'
+description: 'A clear, story-driven walkthrough of attention, multi-head attention, and DeepSeek’s Multi-Head Latent Attention—showing how each idea solves a real limitation and how DeepSeek achieved massive efficiency gains without sacrificing performance.'
+pubDate: 2025-11-20T00:00:00Z
+imgSrc: '/assets/images/attention_image.png'
 imgAlt: 'Image post'
 ---
 
