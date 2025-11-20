@@ -133,7 +133,7 @@ This ensures the model doesn't "peek ahead" during training.
 
 How is this done technically? It's elegantly simple:
 
-Before applying softmax, the attention scores (logits) for future tokens are set to **−∞**. When softmax is applied, $e^{-\infty} = 0$ = 0$, effectively zeroing out attention to future positions.
+Before applying softmax, the attention scores (logits) for future tokens are set to **−∞**. When softmax is applied, $e^{-\infty} = 0$, effectively zeroing out attention to future positions.
 
 Without this masking, during training the model would:
 - See all answers ahead of time
