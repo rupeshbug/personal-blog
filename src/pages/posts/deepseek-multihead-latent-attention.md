@@ -1,7 +1,7 @@
 ---
 layout: '@/templates/BasePost.astro'
 title: 'From Attention to Latent Attention: Understanding One of the Key Innovations That Empowered DeepSeek'
-description: 'A clear, story-driven walkthrough of attention, multi-head attention, and DeepSeek’s Multi-Head Latent Attention—showing how each idea solves a real limitation and how DeepSeek achieved massive efficiency gains without sacrificing performance.'
+description: 'A clear walkthrough of attention, multi-head attention, and DeepSeek’s Multi-Head Latent Attention—showing how each idea solves real limitations and how DeepSeek achieves major efficiency gains.'
 pubDate: 2025-11-20T00:00:00Z
 imgSrc: '/assets/images/attention_image.png'
 imgAlt: 'Image post'
