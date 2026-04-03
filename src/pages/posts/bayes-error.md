@@ -1,3 +1,12 @@
+---
+layout: '@/templates/BasePost.astro'
+title: 'When Bigger Models Stop Helping: A Practical Demo of the Bayes Error Floor'
+description: 'Explore the Bayes error floor through a simple experiment showing why bigger models stop helping when the data itself lacks enough predictive information.'
+pubDate: 2026-04-03T00:00:00Z
+imgSrc: '/assets/images/bayes-error.png'
+imgAlt: 'Illustration of model accuracy hitting a limit despite increasing model size'
+---
+
 # When Bigger Models Stop Helping: A Practical Demo of the Bayes Error Floor
 
 Imagine you’re building a model to predict whether a patient has a disease based on their symptoms. After going through the full pipeline — data cleaning, feature engineering, modeling — you reach an accuracy of 83%.
@@ -176,9 +185,9 @@ This tells us something important:
 
 ![plot1.png](/assets/images/plot1.png)
 
-### Noise Rate vs Best Achievable Accuracy
+### Same Ceiling Across Models
 
-Instead of only showing one experiment, we repeat the experiment with multiple noise rates and show that the ceiling moves exactly with noise.
+Here, we keep the noise rate fixed at 20% and compare models with increasing capacity. The point is simple: once the information limit is reached, adding model capacity does not meaningfully improve performance.
 
 ```python
 import numpy as np
@@ -240,7 +249,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-This is the point where the idea becomes hard to ignore. As I increased the label noise, all models degraded in roughly the same direction, and the achievable accuracy moved with the theoretical limit. The important thing is not that one model is slightly better than another. The important thing is that none of them escape the ceiling.
+This is the point where the idea becomes hard to ignore. Across models, the achievable accuracy stays pinned near the same ceiling. The important thing is not that one model is slightly better than another. The important thing is that none of them escape the limit.
 
 ![plot2.png](/assets/images/plot2.png)
 
@@ -331,7 +340,7 @@ In the end, models don’t create information - they extract it.
 
 ## Conclusion: When the Limit Isn’t the Model
 
-It’s easy to believe that better models should always lead to better results, and in many cases they do, but this experiment highlights something more fundamental: sometimes performance stops improving not because the model is weak, but because the problem itself has a limit. By creating a simple dataset and controlling the noise, we saw that increasing model capacity didn’t break the accuracy ceiling, training and test performance plateaued together, and the maximum achievable accuracy moved exactly with the amount of noise in the data. This is the essence of Bayes Error — there is a limit to how well any model can perform, and that limit is set by the information available. In real-world systems, this limit is hidden; you don’t know the noise rate or how much uncertainty exists, you only see a model that refuses to improve. And that’s where this perspective matters, because instead of endlessly tuning models, you can step back and ask a better question: am I trying to solve a problem that the data cannot fully answer? That shift changes how you approach machine learning — you stop chasing marginal gains through complexity and start focusing on improving the data itself. In the end, models don’t fail because they’re not powerful enough, they fail because the world is not fully observable, and once you understand that, you begin to build systems with a very different mindset.
+It’s easy to believe that better models should always lead to better results, and in many cases they do. But this experiment highlights something more fundamental: sometimes performance stops improving not because the model is weak, but because the problem itself has a limit. By creating a simple dataset and controlling the noise, we saw that increasing model capacity didn’t break the accuracy ceiling and that training and test performance plateaued together. That is the essence of Bayes Error: there is a limit to how well any model can perform, and that limit is set by the information available. In real-world systems, this limit is hidden. You don’t know the noise rate or exactly how much uncertainty exists; you only see a model that refuses to improve. And that’s where this perspective matters, because instead of endlessly tuning models, you can step back and ask a better question: am I trying to solve a problem that the data cannot fully answer? That shift changes how you approach machine learning. You stop chasing marginal gains through complexity and start focusing on improving the data itself.
 
 <aside>
 💡
