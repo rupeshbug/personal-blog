@@ -342,11 +342,14 @@ In the end, models don’t create information - they extract it.
 
 It’s easy to believe that better models should always lead to better results, and in many cases they do. But this experiment highlights something more fundamental: sometimes performance stops improving not because the model is weak, but because the problem itself has a limit. By creating a simple dataset and controlling the noise, we saw that increasing model capacity didn’t break the accuracy ceiling and that training and test performance plateaued together. That is the essence of Bayes Error: there is a limit to how well any model can perform, and that limit is set by the information available. In real-world systems, this limit is hidden. You don’t know the noise rate or exactly how much uncertainty exists; you only see a model that refuses to improve. And that’s where this perspective matters, because instead of endlessly tuning models, you can step back and ask a better question: am I trying to solve a problem that the data cannot fully answer? That shift changes how you approach machine learning. You stop chasing marginal gains through complexity and start focusing on improving the data itself.
 
-<aside>
-💡
-
-Sometimes, the most important decision isn’t how to improve the model —
-
-it’s whether improving the model will help at all.
-
-</aside>
+<div
+  style="margin-top: 2rem; padding: 1.25rem 1.5rem; border-left: 4px solid #f59e0b; border-radius: 0.75rem; background: linear-gradient(135deg, rgba(245, 158, 11, 0.16), rgba(251, 191, 36, 0.08));"
+>
+  <p style="margin: 0 0 0.5rem 0; font-size: 0.9rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #fbbf24;">
+    Key takeaway
+  </p>
+  <p style="margin: 0; font-size: 1.05rem; line-height: 1.8;">
+    Sometimes, the most important decision isn’t how to improve the model —
+    it’s whether improving the model will help at all.
+  </p>
+</div>
